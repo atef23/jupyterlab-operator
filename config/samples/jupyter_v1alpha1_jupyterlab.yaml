@@ -1,0 +1,6 @@
+apiVersion: jupyter.example.com/v1alpha1
+kind: Jupyterlab
+metadata:
+  name: jupyterlab-sample
+spec:
+  size: 1

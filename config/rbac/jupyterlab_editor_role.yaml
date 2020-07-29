@@ -1,0 +1,24 @@
+# permissions for end users to edit jupyterlabs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: jupyterlab-editor-role
+rules:
+- apiGroups:
+  - jupyter.example.com
+  resources:
+  - jupyterlabs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - jupyter.example.com
+  resources:
+  - jupyterlabs/status
+  verbs:
+  - get
