@@ -17,7 +17,7 @@ spec:
       name: jupyterlabs.jupyter.example.com
       version: v1alpha1
       displayName: Jupyterlab
-  description: Jupyterlab IDE for developing Jupyter notebooks
+  description: Jupyterlab IDE
   displayName: Jupyterlab
   icon:
   - base64data: iVBORw0KGgoAAAANSUhEUgAAADUAAAAhCAIAAAD2w3SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEPSURBVFhH7ZbBEYMgEEXTjf1QjTer8GYH9OAMTXilAIvYrLAwxqiJfJnksG+4sIPjk/UrD/pv1A9D/TDUD0P9MO7ws4Y6Q5OXqTBS34S6zMvA/Ubq2KMhO0ohMrVSdxvva+B+PuzTsd+v9y/59YMUIo6bznVDsxTKqOZnQ7FrZVpKJb8D6etU8kuhwcLB1PGbB/HDwsHc57fOr4QXDQeD++21UsKLhoOB/Xa/czG8cDgY0O80vJsvdhFf+8krb8ilu87xDxuKL+/ZuuN+WeYGsi31Jq2/sLVf++U+vo/NySCH92Tkh/zElf7Ofjmq5D3g0bd7CU39jQvssDwAX1sEnI/KqB+G+mGoH4b6IRA9AfM03ocXOND7AAAAAElFTkSuQmCC
@@ -44,5 +44,5 @@ spec:
     url: https://jupyterlab-operator.domain
   maturity: alpha
   provider:
-    name: Red Hat
+    name: Atef Aziz
   version: 0.0.0
