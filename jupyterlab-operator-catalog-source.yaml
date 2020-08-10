@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: jupyterlab-operator-catalog
+spec:
+  sourceType: grpc
+  image: quay.io/aaziz/jupyterlab-operator-index:v21.0.0
+  displayName: Jupyterlab Operator
+  publisher: Atef Aziz
