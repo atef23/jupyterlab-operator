@@ -2,6 +2,8 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: ClusterServiceVersion
 metadata:
   annotations:
+    certified: 'false'
+    repository: github.com/atef23/jupyterlab-operator
     alm-examples: |-
       [
         {
@@ -18,6 +20,10 @@ metadata:
     capabilities: Basic Install
     operators.operatorframework.io/builder: operator-sdk-v0.19.2
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v2
+    containerImage: 'quay.io/aaziz/jupyterlab-operator:v1.0.0'
+    createdAt: '2020-08-11T12:00:00Z'
+    categories: 'AI/Machine Learning, Developer Tools'
+    description: Operator for Jupyterlab
   name: jupyterlab-operator.v1.0.0
   namespace: placeholder
 spec:
@@ -29,7 +35,6 @@ spec:
       name: jupyterlabs.jupyter.example.com
       version: v1alpha1
       displayName: Jupyterlab
-  description: Jupyterlab IDE
   displayName: Jupyterlab
   icon:
   - base64data: iVBORw0KGgoAAAANSUhEUgAAADUAAAAhCAIAAAD2w3SqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEPSURBVFhH7ZbBEYMgEEXTjf1QjTer8GYH9OAMTXilAIvYrLAwxqiJfJnksG+4sIPjk/UrD/pv1A9D/TDUD0P9MO7ws4Y6Q5OXqTBS34S6zMvA/Ubq2KMhO0ohMrVSdxvva+B+PuzTsd+v9y/59YMUIo6bznVDsxTKqOZnQ7FrZVpKJb8D6etU8kuhwcLB1PGbB/HDwsHc57fOr4QXDQeD++21UsKLhoOB/Xa/czG8cDgY0O80vJsvdhFf+8krb8ilu87xDxuKL+/ZuuN+WeYGsi31Jq2/sLVf++U+vo/NySCH92Tkh/zElf7Ofjmq5D3g0bd7CU39jQvssDwAX1sEnI/KqB+G+mGoH4b6IRA9AfM03ocXOND7AAAAAElFTkSuQmCC
@@ -140,7 +145,7 @@ spec:
                 - --enable-leader-election
                 command:
                 - /manager
-                image: quay.io/aaziz/jupyterlab-operator:v21.0.0
+                image: quay.io/aaziz/jupyterlab-operator:v1.0.0
                 name: manager
                 resources:
                   limits:
@@ -200,4 +205,29 @@ spec:
   maturity: alpha
   provider:
     name: Atef Aziz
+  description: >
+    Jupyterlab provides an interface for the development of Jupyter notebooks. See Jupyter project documentation and resources for detailed information:
+      
+      [Jupyter GitHub] (https://github.com/jupyter)
+
+      [Jupyter Project] (https://jupyter.org)
+
+
+    **Prerequisites:**
+
+    - Cluster administrator privileges
+
+
+    **Installation:**
+
+
+    1. Install the operator through the catalog.
+
+    2. Select Jupyterlab under "Installed Operators"
+    
+    3. Create an instance of Jupyterlab using the default configuration "jupyterlab-sample"
+
+    3. Once the instance has started, the route to the Jupyterlab interface is created under Networking -> Routes
+    
+    4.Access the Jupyterlab pod log to obtain the login authorization token
   version: 1.0.0
