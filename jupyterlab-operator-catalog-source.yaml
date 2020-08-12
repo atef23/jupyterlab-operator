@@ -4,6 +4,6 @@ metadata:
   name: jupyterlab-operator-catalog
 spec:
   sourceType: grpc
-  image: quay.io/aaziz/jupyterlab-operator-index:v21.0.0
+  image: quay.io/aaziz/jupyterlab-operator-index:v1.0.0
   displayName: Jupyterlab Operator
   publisher: Atef Aziz
