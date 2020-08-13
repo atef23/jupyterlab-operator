@@ -203,6 +203,9 @@ spec:
   - name: Jupyterlab Operator
     url: https://jupyterlab-operator.domain
   maturity: alpha
+  maintainers:
+    - name: Atef Aziz
+      email: aaziz@redhat.com
   provider:
     name: Atef Aziz
   description: >
