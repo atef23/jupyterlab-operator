@@ -1,13 +1,19 @@
+
 # jupyterlab-operator
 
 This operator deploys the AI/ML Jupyter notebook IDE Jupyterlab in Openshift
 
 ## Requirements
-- Openshift cluster
-- Openshift CLI
-- Docker CLI
+Openshift Cluster admin privileges
 
-## Deployment
+## Option 1: Operator Catalog Installation 
+
+ 1.  `oc apply -f https://raw.githubusercontent.com/atef23/jupyterlab-operator/master/jupyterlab-operator-catalog-source.yaml`
+ 2. Search for "Jupyterlab" in the Operator Catalog
+ 3. Click "install". Additional installation details and instance setup are listed under the Jupyterlab Operator readme in the Operator Catalog
+
+
+## Option 2: Manual Installation 
 Log in to an Openshift cluster from the Openshift CLI and run the following commands:
 
     git clone https://github.com/atef23/jupyterlab-operator.git
